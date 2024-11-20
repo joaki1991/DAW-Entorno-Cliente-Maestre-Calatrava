@@ -1,0 +1,36 @@
+</<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio 1 Expresiones regulares</title>
+  <meta charset="utf-8"/>
+
+  <script src="ejercicio1.js"></script>
+</head>
+<body>
+  <h1>Ejercicio 1 Expresiones regulares</h1>
+  Introduce la expresión regular: <br/>
+  <input type="text" id="expreg" value="" placeholder="Expresión regular" onfocus="this.value=''" />
+
+  <br/><br/>
+  Elige el tipo de expresión a validar: <br/>
+  <select id="tipoexp">
+    <option value="1">Frase mayúscula y que termine en punto</option>
+    <option value="2">Nº teléfono nacional</option>
+    <option value="3">Nº teléfono internacional</option>
+    <option value="4">Fecha con formato y hora</option>
+    <option value="5">Código postal</option>
+    <option value="6">Email</option>
+    <option value="7">Nº entero</option>
+    <option value="8">Nº real</option>
+    <option value="9">CCC</option>
+    <option value="10">Dominio</option>
+    <option value="11">URL con puerto y protocolo</option>
+    <option selected="" value="12">URL con parámetros</option>
+  </select>
+
+  <br/><br/>
+  <button id="validar" onclick="validarExpresion ();">Validar</button>
+
+  <p id="resultado"></p> 
+</body>
+</html>

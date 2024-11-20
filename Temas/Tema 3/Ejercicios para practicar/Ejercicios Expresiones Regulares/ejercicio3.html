@@ -1,0 +1,24 @@
+</<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio 3 Reutilización de parámetros</title>
+  <meta charset="utf-8"/>
+
+  <script src="ejercicio3.js"></script>
+</head>
+<body>
+  <h1>Ejercicio 3 Detectar comillas</h1>
+  Introduce la cadena: <br/>
+  <input type="text" id="expreg" value="" placeholder="Cadena de texto" onfocus="this.value=''" />
+
+  <button onclick="addDouble ();">Comillas dobles</button>
+  <button onclick="addSimple ();">Comillas simples</button>
+  <button onclick="addDoubleSimple ();">Doble simple</button>
+  <button onclick="addSimpleDouble ();">Simple doble</button>
+
+  <br/><br/>
+  <button id="validar" onclick="validarExpresion ();">Validar</button>
+
+  <p id="resultado"></p> 
+</body>
+</html>

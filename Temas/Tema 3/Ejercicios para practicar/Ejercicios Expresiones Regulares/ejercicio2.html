@@ -1,0 +1,30 @@
+</<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio 2 Función match</title>
+  <meta charset="utf-8"/>
+
+  <script src="ejercicio2.js"></script>
+</head>
+<body>
+  <h1>Ejercicio 2 Función match</h1>
+  Introduce la expresión regular: <br/>
+  <input type="text" id="expreg" value="" placeholder="Cadena de texto" onfocus="this.value=''" />
+
+  <button onclick="addDates ();">Fechas</button>
+  <button onclick="addCounts ();">CCC</button>
+
+  <br/><br/>
+
+  Elige el tipo de expresión a validar: <br/>
+  <select id="tipoexp">
+    <option value="1">Fecha y hora</option>
+    <option value="2">CCC</option>
+  </select>
+
+  <br/><br/>
+  <button id="validar" onclick="validarExpresion ();">Validar</button>
+
+  <p id="resultado"></p> 
+</body>
+</html>
