@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Básica</title>
+    <style>
+        /* Estilos simples para dar formato */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora Básica</h1>
+    <!-- Vamos a crear dos inputs en primer lugar que nos permitan ingresar los números A y B -->
+    <label for="numeroA">Ingrese el número A: </label>
+    <input type="number" id="numeroA"><br><br>
+
+    <label for="numeroB">Ingrese el número B: </label>
+    <input type="number" id="numeroB"><br><br>
+
+    <!-- Ahora voy a crear un input con una lista desplegable en la que poder seleccionar el tipo de operación -->
+    <label for="operacion">Seleccione el tipo de operación:</label><br>
+    <select id="operacion">
+        <option></option>
+        <option value="suma">Suma</option>
+        <option value="resta">Resta</option>
+        <option value="multiplicacion">Multiplicación</option>
+        <option value="division">División</option>
+        <option value="modulo">Módulo</option>
+    </select><br><br>
+
+    <!-- Por último implemento un botón que me permita calcular el resultado de los números ingresados y 
+    la operación elegida mediante la función que voy a crear en js  -->
+    <button onclick="realizarOperacion()">Calcular</button><br><br>
+
+    <b><p id="resultado"></p></b>
+
+    <script src="Ejercicio3.js"></script>    
+    
+</body>
+</html>
